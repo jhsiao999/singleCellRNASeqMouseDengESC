@@ -7,7 +7,7 @@ Title: single-cell RNA-seq data of Mouse Spleen cells
 Description: Leng et al., 2015
 LazyData: yes
 Depends:
-    R (>= 2.10), GenomicRanges (>= 1.20.0)
+    R (>= 2.10), Biobase (>= 2.26.0)
 biocViews: ExperimentData
 NeedsCompilation: no
 RoxygenNote: 5.0.1

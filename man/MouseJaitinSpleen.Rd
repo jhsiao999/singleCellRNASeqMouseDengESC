@@ -4,40 +4,36 @@
 \alias{Mouse spleen}
 \title{Jaitin et al., 2014 Mouse spleen cells}
 \description{
-TBA
+The preprocessing steps in the original paper are decribed here:
+http://compgenomics.weizmann.ac.il/tanay/?page_id=519
 }
 \section{format}{
-  Data is an \code{\link{SummarizedExperiment}} object. The
-  \code{assay} slot contains the number of reads or 
-  unique molecule identifiers (UMI) mapped at the gene-level
-  or transcript level. The
-  \code{colData} slot contains a DataFrame (Similar to a data.frame,
-  with the most notable exception being that the row names in DataFrame
-  are optional). The columns in the various data sets contain similar
-  information, with a unique sample ID (each column is a sample), 
-  and phenotype indicators, such as cell type or tissue of origin. 
+  Data is an \code{\link{ExpressionSet}} object. The
+  \code{exprs} slot contains the gene read counts in a gene 
+  by sample matrix. \code{phenoData} slot contains sample information 
+  as described below. \code{featureData} slot contains row information
+  which are usually ensemebl gene ID or gene symbols.
   \describe{ 
-  \item{\code{}:}{The
-  CEL filename in the Gene Expression Omnibus (GEO)}
-  \item{\code{DB_ID}:}{The GSM sample id in GEO}
-  \item{\code{ExperimentID}:}{The GSE experiment id in GEO}
-  \item{\code{Tissue}:}{Tissue type, obtained from the gene
-  expression barcode annotation}
-  \item{\code{SubType}:}{Sample sub-type, obtained from the
-  gene expression barcode annotation}
-  \item{\code{ClinicalGroup}:}{Clinical sample annotation,
-  obtained from the gene expression barcode annotation}
-  \item{\code{Status}:}{Normal (0) or Cancer (1) indicator}
+  \item{\code{index}:}{ }
+  \item{\code{sequencing_batch}:}{ }
+  \item{\code{amplification_batch}:}{ }
+  \item{\code{mouse_ID}:}{ }
+  \item{\code{pool_barcode}:}{ }
+  \item{\code{group_name}:}{ }
+  \item{\code{ERCC_dilution}:}{ }
+  \item{\code{ERCC_volumn_ul}:}{ }
+  \item{\code{Column_name_in_processed_data_file}:}{ }
   }
 }
 \examples{
-#data(singleCellData)
-#assay(singleCellData)
+#data(MouseJaitinSpleen)
+#assay(jaitin2014)$counts
 }
 \references{
+Diego Adhemar Jaitin, Ephraim Kenigsberg, Hadas Keren-Shaulß, Naama Elefant, Franziska Paul, Irina Zaretsky, Alexander Mildner, Nadav Cohen, Steffen Jung, Amos Tanay, Ido Amit. Massively Parallel Single-Cell RNA-Seq for Marker-Free Decomposition of Tissues into Cell Types. Science 343, 776-779 (2014) DOI: 10.1126/science.1247651
 }
 \seealso{
-  \code{\link{SummarizedExperiment}} for the class definition
+  \code{\link{ExpressionSet}} for the class definition
 }
 \keyword{datasets}
 
