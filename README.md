@@ -1,0 +1,28 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+Mouse preimplantation embryo data from Deng et al, 2014
+=======================================================
+
+Description
+-----------
+
+1.  This R package stores [Deng et al.](http://science.sciencemag.org/content/343/6167/193.full)(2014) data directly downloaed from National Center for Biotechnology Information Gene Expression Omnibus (['GSE45719'](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719)).
+2.  See [Deng et al.](http://science.sciencemag.org/content/343/6167/193.full)(2014) for data processing details. Briefly, the count table includes single cell samples after quality filtering and before normalization.
+3.  [Hicks et al.](http://www.biorxiv.org/content/early/2015/08/25/025528)(2015) provides a concise summary of the experimental design in [Deng et al.](http://science.sciencemag.org/content/343/6167/193.full)(2014) (and many other single cell RNA-seq studies).
+
+How to cite
+-----------
+
+If you use the data, please cite:
+
+> Qiaolin Deng, Daniel Ramskold, Bjorn Reinius, and Richard Sandberg. *Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells.* Science 343(6167), 193-6 (2014) DOI: 10.1126/science.1245316
+
+Installation
+------------
+
+To install, run in R:
+
+``` r
+install.packages("devtools")
+devtools::install_github("jhsiao999/singleCellRNASeqMouseDengESC")
+```
