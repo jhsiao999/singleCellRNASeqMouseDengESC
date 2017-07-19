@@ -1,6 +1,7 @@
 \docType{data}
 \name{MouseDengESC}
 \alias{MouseDengESC.rda}
+\alias{GSE41264.rda}
 \alias{MouseDengESC}
 \title{Deng et al., 2014 Mouse ESCs}
 \description{
